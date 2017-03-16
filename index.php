@@ -2,12 +2,12 @@
 
 require("inc/functions.php");
 
-// récupérer liste des régimes
 
-$diets = getAllDiets();
+//Récupération des données pour remplire le modèle
+// récupérer liste des régimes
+$diets=getAllDiets(); //On va utiliser la variable $diets dans le modèle (templates/acceuil.php)
 
 // récupérer liste des évènements
-
 $events = getAllEvents();
 
 
