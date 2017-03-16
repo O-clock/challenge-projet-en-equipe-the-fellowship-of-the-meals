@@ -8,7 +8,7 @@ require("inc/functions.php");
 
 
 include("templates/header.php");
-include("templates/login.php");
+include("templates/login-form.php");
 include("templates/footer.php");
 
 ?>

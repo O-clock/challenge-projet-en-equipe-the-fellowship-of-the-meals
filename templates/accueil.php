@@ -25,9 +25,10 @@
 <main id="diets" class="container">
     <?php
     foreach ($diets as $index => $diet) {
-        $link = "diets.php?index"
+        $link = "diets.php?index";
         # code...
     }
+    ?>
 
 
 </main>
@@ -37,7 +38,8 @@
     foreach ($diets as $index => $diet) {
         $link = "diets.php?index"
         # code...
-    }
+    }?>
+
 
 
 </main>
