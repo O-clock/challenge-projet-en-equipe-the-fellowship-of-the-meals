@@ -10,3 +10,7 @@ function rememberUserData($user){
         "last_name" => $user["last_name"],
     ];
 }
+
+function logOutUser(){
+    unset($_SESSION["user"]);
+}

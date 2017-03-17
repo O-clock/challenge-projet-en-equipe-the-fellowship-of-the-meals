@@ -1,7 +1,6 @@
 <?php
 
 require('inc/setup.php');
-echo password_hash("meal", PASSWORD_DEFAULT);
 
 //Récupération des données pour remplire le modèle
 
@@ -17,7 +16,6 @@ if(isset($_POST["email"])) {
         //On compare le mot de passe recus avec le mot de passe stocké en bdd pour l'utilisateur
         if($_POST["password"]){
             $passwordIsValid = password_verify( $_POST["password"], $user["password"]);
-            echo "info recup";
             //Si le password est correct
             if($passwordIsValid) {
     	       // 3. je stocke les infos de mon utilisateur en session
