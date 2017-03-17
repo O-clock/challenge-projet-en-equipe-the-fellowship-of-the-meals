@@ -8,7 +8,7 @@
 
 
 
-<<<<<<< HEAD
+
     <main id="diets" class="container">
         <?php
     <ul>
@@ -22,4 +22,3 @@
 
 
 </main>
->>>>>>> develop
