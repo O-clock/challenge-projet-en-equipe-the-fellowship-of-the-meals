@@ -1,4 +1,3 @@
-
 ##Connection à la base de donnée
 1. Créer un fichier .gitignore à la racine du projet
     Avec comme texte :
@@ -12,4 +11,3 @@
     $user = "nomDeLUtilisateurDeLaBaseDeDonnée";
     $pass = "MotDePasseDeLaBaseDeDonnée";
     $dbname = "NomDeLaBaseDeDonnée";
->>>>>>> SevDev
