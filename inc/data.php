@@ -1,10 +1,5 @@
 <?php
 
-$host = "localhost";
-$user = "meal";
-$pass = "meal";
-$dbname = "meal";
-
 try {
 	$db_connect = new PDO("mysql:host=".$host.";dbname=".$dbname.";charset=utf8",$user,$pass);
 }
