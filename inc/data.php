@@ -19,6 +19,7 @@ function getAllDiets() {
 
     $sql = "SELECT * FROM diets";
     $query = $db_connect->query($sql);
+
     $diets = $query->fetchAll(PDO::FETCH_ASSOC);
     return $diets;
 }
