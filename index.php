@@ -14,5 +14,5 @@ $events = getAllEvents();
 include("templates/header.php");
 include("templates/accueil.php");
 include("templates/footer.php");
-
+session_destroy();
 ?>

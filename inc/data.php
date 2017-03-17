@@ -36,7 +36,7 @@ function getAllEvents() {
 function getUserFromEmail($email) {
 	global $db_connect;
 
-    $sql = 'SELECT * FROM clients WHERE email = :email';
+    $sql = 'SELECT * FROM users WHERE email = :email';
 	$query = $db_connect->prepare($sql);
 	$query->bindValue(':email', $email);
 	$query->execute();

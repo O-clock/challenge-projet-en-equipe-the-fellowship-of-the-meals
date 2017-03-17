@@ -36,7 +36,7 @@
 <main id="events" class="container">
     <?php
     foreach ($diets as $index => $diet) {
-        $link = "diets.php?index"
+        $link = "diets.php?index";
         # code...
     }?>
 
