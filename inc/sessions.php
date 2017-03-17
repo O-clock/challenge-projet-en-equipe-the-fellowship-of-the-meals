@@ -14,3 +14,6 @@ function rememberUserData($user){
 function logOutUser(){
     unset($_SESSION["user"]);
 }
+function isLoggedIn() {
+    return isset($_SESSION["user"]);
+}
