@@ -13,10 +13,17 @@
         <h1>Bonne Santé</h1>
                 <nav>
 			        <a class="home" href="#">Acceuil</a>
-                    <?php if(isAdmin()) : ?>
+                    <?php
+
+                    //  if(isAdmin()) :
+
+                        ?>
 			        <a class="admin" href="#">Admin</a>
-                    <?php endif; ?>
-			        <a class="login" href="#">M'inscrire</a>
+                    <?php
+
+                  //  endif;
+                   ?>
+			        <a class="login" href="signup.php">M'inscrire</a>
 			        <a class="profil" href="#">Profil</a>
                     <a class="redact" href="#">Écrire un article</a>
                     <a class="create" href="#">Créer un évènement</a>
