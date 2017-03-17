@@ -8,6 +8,7 @@
 
 
 
+<<<<<<< HEAD
     <main id="diets" class="container">
         <?php
     <ul>
@@ -16,3 +17,9 @@
 <?php endforeach; ?>
 </ul>
     }
+
+
+
+
+</main>
+>>>>>>> develop

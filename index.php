@@ -1,13 +1,13 @@
 <?php
 
-require("inc/functions.php");
+require('inc/setup.php');
 
+
+//Récupération des données pour remplire le modèle
 // récupérer liste des régimes
-
-$diets = getAllDiets();
+$diets=getAllDiets(); //On va utiliser la variable $diets dans le modèle (templates/acceuil.php)
 
 // récupérer liste des évènements
-
 $events = getAllEvents();
 
 
