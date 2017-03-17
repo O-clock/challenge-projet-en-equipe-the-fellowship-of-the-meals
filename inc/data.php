@@ -1,10 +1,5 @@
 <?php
 
-$host = "localhost";
-$user = "boutique";
-$pass = "boutique";
-$dbname = "exo_boutique";
-
 try {
 	$db_connect = new PDO("mysql:host=".$host.";dbname=".$dbname.";charset=utf8",$user,$pass);
 }

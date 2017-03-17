@@ -1,6 +1,6 @@
 <?php
 
-require("inc/functions.php");
+require('inc/setup.php');
 
 // récupérer liste des régimes
 
