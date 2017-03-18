@@ -5,26 +5,44 @@ body {
 
 header {
 	background: #741b47;
+	font-family: 'Lobster', cursive;
 }
 
 header h1 {
 	color: #fff;
-	font-size: 4em;
+	font-size: 5em;
 	text-align: center;
+	margin-bottom: 10px;
 }
 
 header a {
-	padding-right: 20px;
+	margin-top: 4px;
+	padding-right: 40px;
+	padding-left: 10px;
 	color: #fff;
 	font-size: 1.5em;
+	float: left;
+}
+
+input {
+	padding: 5px 20px 5px 5px;
+	margin-right: 10px;
+	float: left;
+}
+
+button {
+	padding: 5px 10px 5px 10px;
 }
 
 .navbar-default {
 	background: #741b47;
 	border-color: #741b47;
+	padding-top: 15px;
 }
 
 #footer {
+	font-family: 'Lobster', cursive;
+	font-size: 1.5em;
     background: #741b47;
 	color: #fff;
     padding: 1em 0;
@@ -34,4 +52,17 @@ header a {
     bottom: 0;
     margin-bottom: 0;
     border-width: 1px 0 0;
+}
+
+#acceuil {
+	margin-top: 50px;
+}
+
+#acceuil img {
+	width: 50%;
+	float: left;
+}
+
+.intro-acceuil {
+	float: right;
 }
