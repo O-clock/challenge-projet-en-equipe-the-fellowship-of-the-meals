@@ -1,4 +1,11 @@
 <main id="login" class="container">
+    <div class="error">
+        <ul>
+        <?php foreach ($error as $key => $value): ?>
+                <li><?php echo $value ?></li>
+        <?php endforeach; ?>
+        </ul>
+    </div>
     <form class="form-horizontal col-sm-8 col-sm-offset-2" action="" method="post">
       <div class="form-group" >
         <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
