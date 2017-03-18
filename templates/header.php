@@ -12,19 +12,13 @@
       <header class="container">
         <h1>Bonne Santé</h1>
                 <nav class="navbar navbar-default">
-			        <a class="home" href="#">Acceuil</a>
-                    <?php if(isAdmin()) : ?>
+			        <a class="home" href="index.php">Acceuil</a>
                     <a class="admin" href="#">Admin</a>
-                    <?php endif; ?>
-                    <?php if(!isLoggedIn()) : ?>
                     <a class="admin" href="login.php">Connexion</a>
                     <a class="login" href="#">M'inscrire</a>
-                    <?php endif; ?>
-                    <?php if(!isLoggedIn()) : ?>
 			        <a class="profil" href="#">Profil</a>
                     <a class="redact" href="#">Écrire un article</a>
                     <a class="create" href="#">Créer un évènement</a>
-                    <?php endif; ?>
                         <div id="search">
                             <form action="" id="form-search" method="GET">
                                 <input class="champ"
