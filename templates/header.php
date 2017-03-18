@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
@@ -16,7 +17,7 @@
                     <a class="admin" href="#">Admin</a>
                     <a class="admin" href="#">Connexion</a>
                     <a class="login" href="#">M'inscrire</a>
-			              <a class="profil" href="#">Profil</a>
+			        <a class="profil" href="#">Profil</a>
                     <a class="redact" href="#">Écrire un article</a>
                     <a class="create" href="#">Créer un évènement</a>
                         <div id="search">
