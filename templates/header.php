@@ -21,9 +21,13 @@
 			        <a class="profil" href="#">Profil</a>
 
                     <a class="admin" href="#">Admin</a>
-                    <a class="admin" href="#">Connexion</a>
+                    <a class="admin" href="login.php">Connexion</a>
                     <a class="login" href="#">M'inscrire</a>
+
 			              <a class="profil" href="#">Profil</a>
+
+
+			        <a class="profil" href="#">Profil</a>
 
                     <a class="redact" href="#">Écrire un article</a>
                     <a class="create" href="#">Créer un évènement</a>
