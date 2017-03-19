@@ -1,6 +1,6 @@
-<?php
+  <?php
 
-$host = "localhost";
-$user = "meal";
-$pass = "meal";
-$dbname = "meal";
+  $host = "localhost";
+  $user = "meal";
+  $pass = "meal";
+  $dbname = "meal";
