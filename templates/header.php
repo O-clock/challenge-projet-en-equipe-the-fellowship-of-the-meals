@@ -18,9 +18,9 @@
       <img href="index.php" class="site-logo" src="images/logo-bs.png" alt="Logo Bonne Santé">
     <ul>
       <li><a class="home" href="index.php">Acceuil</a></li>
-
+      <?php if(isAdmin()) : ?>
       <li><a class="admin" href="#">Admin</a>
-
+        <?php endif; ?>
         <ul>
           <li><a href="#">Acceuil Admin</a></li>
           <li><a href="#">Créer une communauté</a></li>
@@ -28,15 +28,15 @@
           <li><a href="#">Valider des articles</a></li>
         </ul>
       </li>
-
+      <?php if(!isLoggedIn()) : ?>
       <li><a class="admin" href="login.php">Connexion</a></li>
       <li><a class="login" href="#">M'inscrire</a></li>
-
-
+      <?php endif; ?>
+      <?php if(!isLoggedIn()) : ?>
       <li><a class="profil" href="#">Profil</a></li>
       <li><a class="write" href="#">Ecrire un article</a></li>
       <li><a class="create" href="#">Créer un évènement</a></li>
-
+      <?php endif; ?>
     </ul>
 	<div id="search">
               <form action="" id="form-search" method="GET">

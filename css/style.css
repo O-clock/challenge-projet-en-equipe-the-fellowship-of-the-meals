@@ -73,6 +73,7 @@ input {
 button {
 	padding: 5px 10px 5px 10px;
 	font-size: 1.2em;
+	color: #741b47;
 }
 
 .navbar-default {
