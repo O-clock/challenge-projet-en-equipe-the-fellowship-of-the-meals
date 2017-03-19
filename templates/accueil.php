@@ -1,3 +1,4 @@
+
 <main id="acceuil" class="container">
     <img src="images/photo-acceuil-SYDJ.jpg" alt="regime">
     <p class="intro-acceuil">
@@ -17,31 +18,12 @@
         <li></li>
         <li></li>
     </ul>-->
-</main>
-
-
-
-
-
-
-<main id="diets" class="container">
-    <?php
-    foreach ($diets as $index => $diet) {
-        $link = "diets.php?index";
-        # code...
-    }
-    ?>
-
-
-</main>
-
-<main id="events" class="container">
-    <?php
-    foreach ($diets as $index => $diet) {
-        $link = "diets.php?index";
-        # code...
-    }?>
-
-
+    <ul>
+        <?php
+        foreach ($diets as $index => $diet) {?>
+        <li><?php print_r($diet) ?></li>
+        <?php }
+        ?>
+    </ul>
 
 </main>
