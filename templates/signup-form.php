@@ -2,7 +2,11 @@
 
     <div class="row">
     	<form id="signup-form" class="col-sm-6 col-sm-offset-3 form-horizontal" action="" method="post">
-
+            <div class="alert <?= (!empty($errors))?"alert-danger":"" ?>">
+    	        <?php foreach ($errors as $error) : ?>
+    	            <p><?= $error ?></p>
+    	        <?php endforeach; ?>
+    	    </div>
     	    <div class="form-group">
                 <h2>Inscription à bonne santé</h2>
     			<label class="control-label" for="firstName">Prénom *</label>
@@ -94,9 +98,19 @@
                     value="<?= (isset($_POST["city"]))?$_POST["city"]:"" ?>"
                     placeholder="votre ville">
     		</div>
+                <div class="form-group">
+        			<label class="control-label" for="phone">N° de téléphone</label>
+        			<input
+                        type="text"
+                        id="phone"
+                        class="form-control"
+                        name="phone"
+                        value="<?= (isset($_POST["phone"]))?$_POST["phone"]:"" ?>"
+                        placeholder="portable ou fixe">
+        		</div>
 
-            <p>* : champs obligatoires</p>
-    	    <button class="pull-right" type="submit" name="signup">Je m'inscris</button>
+            <p>* champs obligatoires</p>
+    	    <button class="pull-right btn btn-warning" type="submit" name="signup">Je m'inscris</button>
     	</form>
     </div>
 </main>

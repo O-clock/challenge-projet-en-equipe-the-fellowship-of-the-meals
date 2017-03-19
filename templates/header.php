@@ -39,5 +39,16 @@
                               required />
                         <button id="acces-send">Rechercher</button>
                     </form>
+                      <?
+                      print_r($_SESSION);
+                      ?>
                </div>
       </header>
+      <?
+    //   $message = $_SESSION["messages"];
+    //   print_r($_SESSION);
+// (!empty($message))? "$message":""
+?>
+      <div class="signup alert alert-success">
+          <?= (!empty($_SESSION['messages'])) ? $_SESSION["messages"] : ""; ?>
+      </div>

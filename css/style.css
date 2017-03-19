@@ -1,0 +1,82 @@
+body {
+  background: #eee;
+  font: 300 100%/1.5 'Roboto', sans-serif;
+}
+
+header {
+	background: #741b47;
+	font-family: 'Lobster', cursive;
+}
+
+header h1 {
+	color: #fff;
+	font-size: 5em;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+header a {
+	margin-top: 4px;
+	padding-right: 40px;
+	padding-left: 10px;
+	color: #fff;
+	font-size: 1.5em;
+	float: left;
+}
+
+input {
+	padding: 5px 20px 5px 5px;
+	margin-right: 10px;
+	float: left;
+}
+
+button {
+	padding: 5px 10px 5px 10px;
+}
+
+.navbar-default {
+	background: #741b47;
+	border-color: #741b47;
+	padding-top: 15px;
+}
+
+#footer {
+	font-family: 'Lobster', cursive;
+	font-size: 1.5em;
+    background: #741b47;
+	color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+.navbar-fixed-bottom {
+    bottom: 0;
+    margin-bottom: 0;
+    border-width: 1px 0 0;
+}
+
+
+#acceuil {
+	margin-top: 50px;
+}
+
+#acceuil img {
+	width: 50%;
+	float: left;
+}
+
+.intro-acceuil {
+	float: right;
+}
+
+main {
+    margin-bottom: 8em;
+}
+.signup {
+  position: relative;
+  float: right;
+  top : 100px;
+  left: center;
+  width :150px;
+  height:80px;
+  display: none;
+}
