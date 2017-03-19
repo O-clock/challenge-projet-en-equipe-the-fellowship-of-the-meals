@@ -29,7 +29,7 @@
                 <p class="">Nombre de places totale : <?php echo $diet["places_nb"] ?></p>
             </div>
         </li>
-
+        endforeach;
     <?php } ?>
 
     </ul>
@@ -43,7 +43,7 @@
                 <p class="">Nombre de places totale : <?php echo $event["places_nb"] ?></p>
             </div>
         </li>
-
+        endforeach;
         <?php } ?>
     </ul>
 </main>
