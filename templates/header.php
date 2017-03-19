@@ -12,41 +12,9 @@
     <body>
       <header class="container">
         <h1>Bonne Santé</h1>
-<<<<<<< HEAD
-                <nav class="navbar navbar-default">
-			        <a class="home" href="#">Acceuil</a>
 
-
-			        <a class="admin" href="#">Admin</a>
-
-			        <a class="login" href="#">M'inscrire</a>
-			        <a class="profil" href="#">Profil</a>
-
-                    <a class="admin" href="#">Admin</a>
-                    <a class="admin" href="login.php">Connexion</a>
-                    <a class="login" href="#">M'inscrire</a>
-
-			              <a class="profil" href="#">Profil</a>
-
-
-			        <a class="profil" href="#">Profil</a>
-
-                    <a class="redact" href="#">Écrire un article</a>
-                    <a class="create" href="#">Créer un évènement</a>
-                        <div id="search">
-                            <form action="" id="form-search" method="GET">
-                                <input class="champ"
-                                        name="id"
-                                        type="text"
-                                        placeholder="Rechercher un évènement"
-                                        value =""
-                                        required />
-                                        <button id="acces-send">Rechercher</button>
-                                </form>
-                        </div>
-		        </nav>
                <!-- Saisie barre de recherche -->
-=======
+
           <nav class="navbar navbar-default">
             <a class="home" href="index.php">Acceuil</a>
             <?php if(isAdmin()) : ?>
@@ -73,7 +41,6 @@
               </form>
             </div>
           </nav>
-<!-- Saisie barre de recherche -->
->>>>>>> e7dc7fb56a4a4f8ca4ae0bb35e90179c8574d1bc
+
 
 </header>
