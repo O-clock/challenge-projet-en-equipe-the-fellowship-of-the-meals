@@ -18,12 +18,32 @@
         <li></li>
         <li></li>
     </ul>-->
-    <ul>
-        <?php
-        foreach ($diets as $index => $diet) {?>
-        <li><?php print_r($diet) ?></li>
-        <?php }
-        ?>
-    </ul>
 
+    <ul>
+        <?php foreach ($diets as $index => $diet) { ?>
+        <li>
+            <h2><?php echo $diet["title"]?></h2>
+            <p><?php echo $diet["short_desc"]?></p>
+            <img src="<?php echo $diet["thumbnail"]?>" alt="<?php echo $diet["title"]?>">
+            <div class="infos_diet">
+                <p class="">Nombre de places totale : <?php echo $diet["places_nb"] ?></p>
+            </div>
+        </li>
+        endforeach;
+    <?php } ?>
+
+    </ul>
+    <ul>
+        <?php foreach ($events as $index => $event) { ?>
+        <li>
+            <h2><?php echo $event["title"]?></h2>
+            <p><?php echo $event["short_desc"]?></p>
+            <img src="<?php echo $event["thumbnail"]?>" alt="<?php echo $event["title"]?>">
+            <div class="infos_event">
+                <p class="">Nombre de places totale : <?php echo $event["places_nb"] ?></p>
+            </div>
+        </li>
+        endforeach;
+        <?php } ?>
+    </ul>
 </main>

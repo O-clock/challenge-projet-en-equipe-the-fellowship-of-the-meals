@@ -12,6 +12,8 @@
     <body>
       <header class="container">
         <h1>Bonne Santé</h1>
+
+               <!-- Saisie barre de recherche -->
           <nav class="navbar navbar-default">
             <a class="home" href="index.php">Acceuil</a>
             <?php if(!isLoggedIn()) : ?>
@@ -39,6 +41,4 @@
               </form>
             </div>
           </nav>
-<!-- Saisie barre de recherche -->
-
 </header>
