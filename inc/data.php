@@ -32,6 +32,7 @@ function getAllEvents() {
 
 
 
+
     function saveInfoMember($infoMember) {
     global $db_connect;
 
@@ -75,6 +76,7 @@ function getAllEvents() {
 
 };
 
+
 /*** Uitlisateurs ***/
 
 //Récupération des informations d'un utilisateur à partir de son email (test en même temps si un utilisateur avec cet email existe)
@@ -89,6 +91,7 @@ function getUserFromEmail($email) {
 	$result = $query->fetch(PDO::FETCH_ASSOC);
 	return $result;
 }
+
 
 function getRoleUser($userId){
     global $db_connect;

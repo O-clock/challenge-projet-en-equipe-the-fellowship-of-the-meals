@@ -4,6 +4,7 @@ require('inc/setup.php');
 if(isLoggedIn()){
     header("Location: index.php");
 }
+
 //Récupération des données pour remplire le modèle
 
 //On vérifie que l'utilisateur à envoyer le formulaire

@@ -18,30 +18,72 @@ header {
 	font-family: 'Lobster', cursive;
 }
 
-header h1 {
-	color: #fff;
-	font-size: 5em;
-	text-align: center;
-	margin-bottom: 10px;
+.site-logo {
+  float: left;
+  width: 80px;
+  margin-right: 20px;
+  margin-left: 10px;
 }
 
-header a {
-	margin-top: 4px;
-	padding-right: 40px;
-	padding-left: 10px;
-	color: #fff;
-	font-size: 1.5em;
-	float: left;
-}
+#menu ul {
+ font-size: 1em;
+ margin:0;
+ padding:25px 0 0 0;
+ list-style-type:none;
+ text-align:center;
+ }
+
+#menu li {
+ float:left;
+ font-size: 1.6em;
+ margin:auto;
+ padding:3px 0 10px 3px;
+ background-color: #741b47;
+ }
+
+#menu li a {
+ color:white;
+ text-decoration:none;
+ padding: 10px 25px 15px 5px;
+ }
+
+#menu li a:hover {
+ color:#c67da1;
+ transition-property: color,font-size;
+ transition-duration: 0.3s;
+ }
+
+#menu ul li ul {
+ display:none;
+ }
+
+#menu ul li:hover ul {
+ padding-top: 10px;
+ display:block;
+ text-align: left;
+ }
+
+#menu li:hover ul li {
+ float:none;
+ }
+
+ #menu li ul {
+ font-size: 0.5em;
+ position:absolute;
+ }
 
 input {
-	padding: 5px 20px 5px 5px;
+	padding: 5px 20px 5px 10px;
 	margin-right: 10px;
+	margin-left: 10px;
 	float: left;
+	font-size: 1.2em;
 }
 
 button {
 	padding: 5px 10px 5px 10px;
+	font-size: 1.2em;
+	color: #741b47;
 }
 
 .navbar-default {
@@ -109,6 +151,7 @@ button {
 	font-weight: bold;
 }
 
+<<<<<<< HEAD
 
 /*******************************************************************************
 									xoxoxoxoxo
@@ -149,4 +192,8 @@ button {
     bottom: 0;
     margin-bottom: 0;
     border-width: 1px 0 0;
+=======
+.intro-acceuil p {
+	font-size: 1.2em;
+>>>>>>> davidev
 }

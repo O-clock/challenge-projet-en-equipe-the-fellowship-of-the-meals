@@ -2,6 +2,8 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
         <title>Bonne Santé</title>
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -11,25 +13,34 @@
     </head>
     <body>
       <header class="container">
-        <h1>Bonne Santé</h1>
 
-               <!-- Saisie barre de recherche -->
-          <nav class="navbar navbar-default">
-            <a class="home" href="index.php">Acceuil</a>
-            <?php if(!isLoggedIn()) : ?>
-            <a class="admin" href="login.php">Connexion</a>
-            <a class="login" href="signup.php">M'inscrire</a>
-            <?php endif; ?>
-            <?php if(isLoggedIn()) : ?>
-            <a class="profil" href="#">Profil</a>
-            <a class="redact" href="#">Écrire un article</a>
-            <a class="create" href="#">Créer un évènement</a>
-            <?php if(isAdmin()) : ?>
-            <a class="admin" href="#">Admin</a>
-            <?php endif; ?>
-            <a class="create" href="logout.php">Déconnexion</a>
-            <?php endif; ?>
-            <div id="search">
+	<nav class="navbar navbar-default">
+    <div id="menu">
+      <img href="index.php" class="site-logo" src="images/logo-bs.png" alt="Logo Bonne Santé">
+    <ul>
+      <li><a class="home" href="index.php">Acceuil</a></li>
+      <?php if(isAdmin()) : ?>
+      <li><a class="admin" href="#">Admin</a>
+        <?php endif; ?>
+        <ul>
+          <li><a href="#">Acceuil Admin</a></li>
+          <li><a href="#">Créer une communauté</a></li>
+          <li><a href="#">Gestion des utilisateurs</a></li>
+          <li><a href="#">Valider des articles</a></li>
+        </ul>
+      </li>
+      <?php if(!isLoggedIn()) : ?>
+      <li><a class="admin" href="login.php">Connexion</a></li>
+      <li><a class="login" href="#">M'inscrire</a></li>
+      <?php endif; ?>
+      <?php if(!isLoggedIn()) : ?>
+      <li><a class="profil" href="#">Profil</a></li>
+      <li><a class="write" href="#">Ecrire un article</a></li>
+      <li><a class="create" href="#">Créer un évènement</a></li>
+      <?php endif; ?>
+    </ul>
+	<div id="search">
+
               <form action="" id="form-search" method="GET">
                 <input class="champ"
                 name="id"
@@ -40,5 +51,6 @@
                 <button id="acces-send">Rechercher</button>
               </form>
             </div>
+
           </nav>
 </header>
