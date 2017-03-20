@@ -27,7 +27,7 @@
             <?php if(isAdmin()) : ?>
             <a class="admin" href="#">Admin</a>
             <?php endif; ?>
-            <a class="create" href="logOut.php">Déconnexion</a>
+            <a class="create" href="logout.php">Déconnexion</a>
             <?php endif; ?>
             <div id="search">
               <form action="" id="form-search" method="GET">
