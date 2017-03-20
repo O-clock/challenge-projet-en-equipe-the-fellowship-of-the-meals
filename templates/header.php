@@ -21,7 +21,7 @@
       <li><a class="home" href="index.php">Acceuil</a></li>
       <?php if(isAdmin()) : ?>
       <li><a class="admin" href="#">Admin</a>
-        <?php endif; ?>
+
         <ul>
           <li><a href="#">Acceuil Admin</a></li>
           <li><a href="#">Créer une communauté</a></li>
@@ -29,6 +29,7 @@
           <li><a href="#">Valider des articles</a></li>
         </ul>
       </li>
+      <?php endif; ?>
       <?php if(!isLoggedIn()) : ?>
       <li><a class="admin" href="login.php">Connexion</a></li>
       <li><a class="login" href="#">M'inscrire</a></li>
