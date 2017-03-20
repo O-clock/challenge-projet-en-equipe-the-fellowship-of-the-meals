@@ -3,6 +3,16 @@ body {
   font: 300 100%/1.5 'Roboto', sans-serif;
 }
 
+main {
+    margin-bottom: 8em;
+}
+
+/*******************************************************************************
+									xoxoxoxoxo
+									x HEADER x
+									xoxoxoxoxo
+*******************************************************************************/
+
 header {
 	background: #741b47;
 	font-family: 'Lobster', cursive;
@@ -40,20 +50,12 @@ button {
 	padding-top: 15px;
 }
 
-#footer {
-	font-family: 'Lobster', cursive;
-	font-size: 1.5em;
-    background: #741b47;
-	color: #fff;
-    padding: 1em 0;
-    text-align: center;
-}
-.navbar-fixed-bottom {
-    bottom: 0;
-    margin-bottom: 0;
-    border-width: 1px 0 0;
-}
 
+/*******************************************************************************
+									xoxoxoxoxo
+									x ACCUEIL x
+									xoxoxoxoxo
+*******************************************************************************/
 
 #acceuil {
 	margin-top: 50px;
@@ -67,10 +69,52 @@ button {
 .intro-acceuil {
 	float: right;
 }
-
-main {
-    margin-bottom: 8em;
+#acceuil {
+	display: block;
+	padding-top: 50px;
+	padding-bottom: 30px;
+	background-color: #fff;
 }
+
+#acceuil img {
+	width: 50%;
+	border: 2px solid #741b47;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+#acceuil button {
+	float: left;
+	background-color: #3b5998;
+	border: 0.5px solid #3b5998;
+	color: #fff;
+	border-radius: 3px;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.img-acceuil {
+	float: left;
+}
+
+.intro-acceuil {
+	width: 550px;
+	text-align: left;
+	float: right;
+	font-size: 1.2em;
+}
+
+.intro-acceuil h1 {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+
+/*******************************************************************************
+									xoxoxoxoxo
+									x SIGNUP x
+									xoxoxoxoxo
+*******************************************************************************/
 .signup {
   position: relative;
   float: right;
@@ -79,4 +123,30 @@ main {
   width :150px;
   height:80px;
   display: none;
+}
+
+#signup-form button  {
+	background-color: #741b47:
+}
+
+
+/*******************************************************************************
+									xoxoxoxoxo
+									x FOOTER x
+									xoxoxoxoxo
+*******************************************************************************/
+
+
+#footer {
+	font-family: 'Lobster', cursive;
+	font-size: 1.5em;
+    background: #741b47;
+	color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+.navbar-fixed-bottom {
+    bottom: 0;
+    margin-bottom: 0;
+    border-width: 1px 0 0;
 }

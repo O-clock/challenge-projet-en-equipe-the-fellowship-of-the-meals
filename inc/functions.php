@@ -2,6 +2,7 @@
 require('sessions.php');
 require('data.php');
 
+
 //Pour transformer une chaîne vide en NULL ne marche pas, snif
 // function isNull($variable) {
 //   if ($variable == "") {
@@ -9,3 +10,10 @@ require('data.php');
 //     print_r($variable);
 //   }
 // }
+
+function isAdmin(){
+    $role = getRoleUser($_SESSION["user"]["id"]);
+    if($role == "admin"){
+        return $role;
+    }
+}

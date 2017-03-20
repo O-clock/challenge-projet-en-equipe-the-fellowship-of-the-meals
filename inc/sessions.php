@@ -1,3 +1,19 @@
 <?php
+
 // activer les sessions
 session_start();
+
+function rememberUserData($user){
+    $_SESSION["user"] = [
+        "id" => $user["id"],
+        "first_name" => $user["first_name"],
+        "last_name" => $user["last_name"],
+    ];
+}
+
+function logOutUser(){
+    unset($_SESSION["user"]);
+}
+function isLoggedIn() {
+    return isset($_SESSION["user"]);
+}

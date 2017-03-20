@@ -14,6 +14,7 @@ function getAllDiets() {
 
     $sql = "SELECT * FROM diets";
     $query = $db_connect->query($sql);
+
     $diets = $query->fetchAll(PDO::FETCH_ASSOC);
     return $diets;
 }
@@ -73,3 +74,30 @@ function getAllEvents() {
     return $result;
 
 };
+
+/*** Uitlisateurs ***/
+
+//Récupération des informations d'un utilisateur à partir de son email (test en même temps si un utilisateur avec cet email existe)
+function getUserFromEmail($email) {
+	global $db_connect;
+
+    $sql = 'SELECT * FROM users WHERE email = :email';
+	$query = $db_connect->prepare($sql);
+	$query->bindValue(':email', $email);
+	$query->execute();
+
+	$result = $query->fetch(PDO::FETCH_ASSOC);
+	return $result;
+}
+
+function getRoleUser($userId){
+    global $db_connect;
+
+    $sql = 'SELECT name FROM roles inner join role_user WHERE id_user = :id_user';
+    $query = $db_connect->prepare($sql);
+    $query->bindValue(':id_user', $userId);
+    $query->execute();
+
+    $result = $query->fetch(PDO::FETCH_ASSOC);
+    return $result["name"];
+}
