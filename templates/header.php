@@ -29,7 +29,6 @@
       <li><a class="create" href="#">Créer un évènement</a></li>
       <?php if(isAdmin()) : ?>
       <li><a class="admin" href="#">Admin</a>
-
         <ul>
           <li><a href="#">Acceuil Admin</a></li>
           <li><a href="#">Créer une communauté</a></li>
@@ -38,6 +37,7 @@
         </ul>
       </li>
       <?php endif; ?>
+      <li><a class="login" href="logout.php">Déconnexion</a></li>
       <?php endif; ?>
     </ul>
 	<div id="search">
