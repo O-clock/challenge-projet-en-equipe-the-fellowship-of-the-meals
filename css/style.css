@@ -151,7 +151,7 @@ button {
 	font-weight: bold;
 }
 
-<<<<<<< HEAD
+
 
 /*******************************************************************************
 									xoxoxoxoxo
@@ -192,8 +192,9 @@ button {
     bottom: 0;
     margin-bottom: 0;
     border-width: 1px 0 0;
-=======
+}
+
 .intro-acceuil p {
 	font-size: 1.2em;
->>>>>>> davidev
+
 }
