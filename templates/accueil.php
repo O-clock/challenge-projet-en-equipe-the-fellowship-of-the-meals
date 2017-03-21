@@ -9,7 +9,7 @@
         </p>
         <button type="button" name="connexion-facebook">Connectez vous avec <i class="fa fa-facebook-square" aria-hidden="true"></i></button>
     </div>
-
+</main>
 
     <!-- Bouton Connection à Facebook
     <!--<div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true"></div>-->
@@ -28,34 +28,38 @@
         <li></li>
         <li></li>
     </ul>-->
-
-    <ul>
-        <?php foreach ($diets as $index => $diet) { ?>
-        <li>
-            <h2><?php echo $diet["name"]?></h2>
-            <p><?php echo $diet["short_desc"]?></p>
-            <img src="<?php echo $diet["thumbnail"]?>" alt="<?php echo $diet["title"]?>">
-            <div class="infos_diet">
-                <p class="">Description courte : <?php echo $diet["short_desc"] ?></p>
-            </div>
-        </li>
-    <?php
-    // endforeach
-    ?>
-    <?php } ?>
-
-    </ul>
-    <ul>
-        <?php foreach ($events as $index => $event) { ?>
-        <li>
-            <h2><?php echo $event["title"]?></h2>
-            <p><?php echo $event["short_desc"]?></p>
-            <img src="<?php echo $event["thumbnail"]?>" alt="<?php echo $event["title"]?>">
-            <div class="infos_event">
-                <p class="">Nombre de places totale : <?php echo $event["places_nb"] ?></p>
-            </div>
-        </li>
-        <!-- endforeach; -->
+    <main id="diet" class="container">
+    <div class="diet">
+        <h1>Liste des régimes</h1>
+        <ul>
+            <?php foreach ($diets as $index => $diet) { ?>
+            <li>
+                    <img src="<?php echo $diet["thumbnail"]?>" alt="<?php echo $diet["title"]?>">
+                    <h2><?php echo $diet["name"]?></h2>
+                    <p><?php echo $diet["short_desc"]?></p>
+                    <p class="">Description courte : <?php echo $diet["short_desc"] ?></p>
+            </li>
+        <?php
+        // endforeach
+        ?>
         <?php } ?>
-    </ul>
+
+        </ul>
+    </div>
+    </main>
+    <main id="event" class="container">
+    <div class="event">
+        <h1>Liste des évènements</h1>
+        <ul>
+            <?php foreach ($events as $index => $event) { ?>
+            <li>
+                    <img src="<?php echo $event["thumbnail"]?>" alt="<?php echo $event["title"]?>">
+                    <h2><?php echo $event["title"]?></h2>
+                    <p><?php echo $event["short_desc"]?></p>
+                    <p class="">Nombre de places totale : <?php echo $event["places_nb"] ?></p>
+            </li>
+            <!-- endforeach; -->
+            <?php } ?>
+        </ul>
+    </div>
 </main>

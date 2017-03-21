@@ -4,7 +4,7 @@ body {
 }
 
 main {
-    margin-bottom: 8em;
+
 }
 
 /*******************************************************************************
@@ -99,10 +99,6 @@ button {
 									xoxoxoxoxo
 *******************************************************************************/
 
-#acceuil {
-	margin-top: 50px;
-}
-
 #acceuil img {
 	width: 50%;
 	float: left;
@@ -113,6 +109,7 @@ button {
 }
 #acceuil {
 	display: block;
+	margin-top: 50px;
 	padding-top: 50px;
 	padding-bottom: 30px;
 	background-color: #fff;
@@ -149,6 +146,68 @@ button {
 .intro-acceuil h1 {
 	font-size: 2em;
 	font-weight: bold;
+}
+
+#diet {
+	background-color: #741b47;
+	color: #fff;
+	display: block;
+}
+
+.diet {
+	float: left;
+	width: 100%;
+	display: block;
+	padding-bottom: 20px;
+	margin-right: 40px;
+}
+
+.diet h1 {
+	font-family: 'Lobster', cursive;
+	color: #fff;
+	padding-left: 10px;
+}
+
+.diet h2 {
+	font-family: 'Lobster', cursive;
+	color: #fff;
+}
+
+.diet img {
+	text-align: center;
+	width: auto;
+	float: left;
+}
+
+#event {
+	background-color: #741b47;
+	color: #fff;
+	display: block;
+}
+
+.event {
+	float: left;
+	width: 100%;
+	display: block;
+	padding-bottom: 20px;
+	margin-right: 40px;
+}
+
+.event h1 {
+	font-family: 'Lobster', cursive;
+	color: #fff;
+	padding-left: 10px;
+}
+
+.event h2 {
+	font-family: 'Lobster', cursive;
+	color: #fff;
+}
+
+.event img {
+	text-align: center;
+	width: auto;
+	float: left;
 }
 
 
