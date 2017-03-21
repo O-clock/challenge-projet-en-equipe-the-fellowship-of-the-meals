@@ -152,14 +152,11 @@ button {
 	background-color: #741b47;
 	color: #fff;
 	display: block;
+	text-align: center;
 }
 
 .diet {
 	float: left;
-	width: 100%;
-	display: block;
-	padding-bottom: 20px;
-	margin-right: 40px;
 }
 
 .diet h1 {
@@ -174,7 +171,6 @@ button {
 }
 
 .diet img {
-	text-align: center;
 	width: auto;
 	float: left;
 }
