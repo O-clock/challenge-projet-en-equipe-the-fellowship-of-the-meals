@@ -21,7 +21,7 @@
       <li><a class="home" href="index.php">Acceuil</a></li>
       <?php if(!isLoggedIn()) : ?>
       <li><a class="login" href="login.php">Connexion</a></li>
-      <li><a class="login" href="#">M'inscrire</a></li>
+      <li><a class="login" href="signup.php">M'inscrire</a></li>
       <?php endif; ?>
       <?php if(isLoggedIn()) : ?>
       <li><a class="profil" href="#">Profil</a></li>
